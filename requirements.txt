@@ -3,3 +3,4 @@ rembg
 Pillow
 onnxruntime
 numpy
+waitress
