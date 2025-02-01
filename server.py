@@ -2,9 +2,6 @@ from flask import Flask, request, send_file, render_template
 from rembg import remove
 from PIL import Image
 from io import BytesIO
-import os
-from waitress import serve
-
 
 app = Flask(__name__)
 
@@ -47,5 +44,4 @@ def rawdogging_this():
     return render_template('index.html')
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
-    serve(app, host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=5000)
