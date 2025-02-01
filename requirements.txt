@@ -3,4 +3,3 @@ rembg
 Pillow
 onnxruntime
 numpy
-os
